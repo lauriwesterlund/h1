@@ -1,0 +1,142 @@
+html {
+  /* Prevents page shifting if the scroll bar appears. */
+  margin-left: calc(100vw - 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  line-height: 1.4;
+  font-size: 12px;
+  background: #161d22;
+  height: 100vh;
+  font-weight: 400;
+  color: #fff;
+}
+
+.toast {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  
+}
+
+.wrapper {
+  background-color:#1e272c;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 8rem 30px 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.header p {
+  font-size: 14px;
+}
+
+.locationImage {
+  text-align: center;
+}
+
+.locationImage img {
+  max-width: 75%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(32 32 32 / 8%) 0px 10px 32px 0px;
+  padding: 20px;
+}
+
+form input {
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  height: 44px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgb(209, 215, 217);
+  color: #000;
+}
+
+form button {
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  border-radius: 2px;
+  border: none;
+  background-color: #33424b;
+  font-size: 14px;
+  width: 100%;
+  height: 44px;
+  color: rgb(255, 255, 255);
+  padding: 0px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+}
+
+form button:hover {
+  background-color: #4b616e;
+}
+
+.inventory {
+  text-align: center;
+}
+
+.inventory h2 {
+  margin-bottom: 25px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemName {
+  margin-left: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 750px) {
+  .wrapper {
+    width: 75vw;
+  }
+
+  .locationImage img {
+    max-width: 50%;
+  }
+}
