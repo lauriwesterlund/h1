@@ -295,7 +295,7 @@ export const EXTRA_ITEMS: Item[] = [
             'Heilautat miekkaa ja tapat lohikäärmeen. Lohikäärme pudottaa jotain. Kuulet portin aukeavan jossain.'
           );
         } else {
-          gameMessage('Kaunis musiikki soi ympärilläsi.');
+          gameMessage('Heiluttelet miekkaasi tylsistyneenä...');
         }
       }
     },
